@@ -8,5 +8,9 @@
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "tailwindcss": "^4.0.13"
+  },
+  "devDependencies": {
+    "sass": "^1.85.1",
+    "sass-embedded": "^1.85.1"
   }
 }
