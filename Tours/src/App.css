@@ -26,3 +26,17 @@ body {
 .animate-expand {
   animation: expand 0.7s ease-out forwards;
 }
+
+.section {
+  width: 100%;
+  height: 94vh;
+  background: orange;
+
+  /* إمالة العنصر لإنشاء تأثير القص */
+  transform: skewY(-4.76deg);
+}
+
+/* تصحيح إمالة المحتوى داخل الـ section */
+.section * {
+  transform: skewY(4.76deg);
+}
