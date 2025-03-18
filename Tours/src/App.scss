@@ -6,7 +6,7 @@ $color-primary: #5593c6;
 $color-primary-light: #03a9f4;
 $color-primary-dark: #03a9f4;
 $color-grey-dark-2: #e0e0e0;
-$color-grey-dark-3: #b0bec5;
+$color-grey-dark-3: #000000;
 
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
 
@@ -23,7 +23,6 @@ html {
 }
 
 body {
-  background: $color-grey-dark-2;
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 18px;
@@ -45,8 +44,8 @@ body {
 
   &__button {
     background-color: $color-white;
-    height: 7rem;
-    width: 7rem;
+    height: 6rem;
+    width: 6rem;
     position: fixed;
     top: 6rem;
     right: 6rem;
@@ -58,8 +57,8 @@ body {
   }
 
   &__background {
-    height: 6rem;
-    width: 6rem;
+    height: 5rem;
+    width: 5rem;
     border-radius: 50%;
     position: fixed;
     top: 6.5rem;
@@ -145,12 +144,12 @@ body {
   //ICON
   &__icon {
     position: relative;
-    margin-top: 3.5rem;
+    margin-top: 3rem;
 
     &,
     &::before,
     &::after {
-      width: 3rem;
+      width: 2.5rem;
       height: 2px;
       background-color: $color-grey-dark-3;
       display: inline-block;
