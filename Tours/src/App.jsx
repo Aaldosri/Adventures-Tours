@@ -47,12 +47,12 @@ function App() {
               </li>
               <li class="navigation__item">
                 <a href="#" class="navigation__link">
-                  <span>03</span>Popular tours
+                  <span>03</span>Review
                 </a>
               </li>
               <li class="navigation__item">
                 <a href="#" class="navigation__link">
-                  <span>04</span>Stories
+                  <span>04</span>Popular tours
                 </a>
               </li>
               <li class="navigation__item">
@@ -114,6 +114,21 @@ function App() {
                     <h1 class="header">
                       Explore the Nature and Embrace the Adventure
                     </h1>
+                    <p
+                      style={{
+                        margin: "10px",
+                        width: "100%",
+                        textAlign: "center",
+                        display: "flex",
+                        justifyContent: "center",
+                        alignContent: "center",
+                        alignItems: "center",
+                      }}
+                    >
+                      Step into nature’s wonders and embrace the thrill of
+                      adventure. From soaring peaks to winding rivers, every
+                      journey is a new story waiting to unfold!
+                    </p>
                     <div class="content">
                       <div class="wrapper">
                         <div class="box vintage">
@@ -191,16 +206,32 @@ function App() {
                   </div>
                 </div>
               </div>
-              <div style={{ display: "flex", justifyContent: "space-around" }}>
-                <div>
-                  <h1> Features</h1>
-                </div>
+
+              {/* ===== FEATURES ===== */}
+              <div
+                style={{
+                  background: "#218c74",
+                  height: "120vh",
+                  clipPath: "polygon(0 20%, 100% 0, 100% 80%, 0 100%)", // قص من الأعلى والأسفل
+                }}
+              >
+                {/* <div className="h1">
+                  <h1
+                    style={{
+                      background: "orange",
+                      marginTop: "150px",
+                    }}
+                  >
+                    {" "}
+                    Features
+                  </h1>
+                </div> */}
                 <div class="timeline">
                   <div class="container left">
                     <div class="date">15 Dec</div>
                     <i class="icon fa fa-home">1</i>
                     <div class="content">
-                      <h2>Lorem ipsum dolor sit amet</h2>
+                      <h2>Thrilling Experiences</h2>
                       <p>
                         Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id
                         luctus erat sagittis non. Ut blandit semper pretium.
@@ -220,18 +251,7 @@ function App() {
                   </div>
                   <div class="container left">
                     <div class="date">10 Jul</div>
-                    <i class="icon fa fa-user"></i>
-                    <div class="content">
-                      <h2>Lorem ipsum dolor sit amet</h2>
-                      <p>
-                        Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id
-                        luctus erat sagittis non. Ut blandit semper pretium.
-                      </p>
-                    </div>
-                  </div>
-                  <div class="container right">
-                    <div class="date">18 May</div>
-                    <i class="icon fa fa-running"></i>
+                    <i class="icon fa fa-user">3</i>
                     <div class="content">
                       <h2>Lorem ipsum dolor sit amet</h2>
                       <p>
@@ -242,11 +262,348 @@ function App() {
                   </div>
                 </div>{" "}
               </div>
+
+              {/* ===== END FEATURES ===== */}
+
+              {/* ===== CARDS ===== */}
+              <div className="h1">
+                <h1>MOST POPULAR TOURS</h1>
+              </div>
+              <div className="div-cards">
+                <div className="flip-card-container" style={{ "--hue": 220 }}>
+                  <div className="flip-card">
+                    <div className="card-front">
+                      <figure>
+                        <div className="img-bg"></div>
+                        <img
+                          src="https://images.unsplash.com/photo-1486162928267-e6274cb3106f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+                          alt="Brohm Lake"
+                        />
+                        <figcaption>Brohm Lake</figcaption>
+                      </figure>
+
+                      <ul>
+                        <li>Detail 1</li>
+                        <li>Detail 2</li>
+                        <li>Detail 3</li>
+                        <li>Detail 4</li>
+                        <li>Detail 5</li>
+                      </ul>
+                    </div>
+
+                    <div className="card-back">
+                      <figure>
+                        <div className="img-bg"></div>
+                        <img
+                          src="https://images.unsplash.com/photo-1486162928267-e6274cb3106f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+                          alt="Brohm Lake"
+                        />
+                      </figure>
+
+                      <button>Book</button>
+
+                      <div className="design-container">
+                        <span className="design design--1"></span>
+                        <span className="design design--2"></span>
+                        <span className="design design--3"></span>
+                        <span className="design design--4"></span>
+                        <span className="design design--5"></span>
+                        <span className="design design--6"></span>
+                        <span className="design design--7"></span>
+                        <span className="design design--8"></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="flip-card-container" style={{ "--hue": 170 }}>
+                  <div className="flip-card">
+                    <div className="card-front">
+                      <figure>
+                        <div className="img-bg"></div>
+                        <img
+                          src="https://images.unsplash.com/photo-1545436864-cd9bdd1ddebc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+                          alt="Image 2"
+                        />
+                        <figcaption>Légende</figcaption>
+                      </figure>
+
+                      <ul>
+                        <li>Detail 1</li>
+                        <li>Detail 2</li>
+                        <li>Detail 3</li>
+                        <li>Detail 4</li>
+                        <li>Detail 5</li>
+                      </ul>
+                    </div>
+
+                    <div className="card-back">
+                      <figure>
+                        <div className="img-bg"></div>
+                        <img
+                          src="https://images.unsplash.com/photo-1545436864-cd9bdd1ddebc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+                          alt="image-2"
+                        />
+                      </figure>
+
+                      <button>Book</button>
+
+                      <div className="design-container">
+                        <span className="design design--1"></span>
+                        <span className="design design--2"></span>
+                        <span className="design design--3"></span>
+                        <span className="design design--4"></span>
+                        <span className="design design--5"></span>
+                        <span className="design design--6"></span>
+                        <span className="design design--7"></span>
+                        <span className="design design--8"></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="flip-card-container" style={{ "--hue": 350 }}>
+                  <div className="flip-card">
+                    <div className="card-front">
+                      <figure>
+                        <div className="img-bg"></div>
+                        <img
+                          src="https://images.unsplash.com/photo-1486162928267-e6274cb3106f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+                          alt="Brohm Lake"
+                        />
+                        <figcaption>Brohm Lake</figcaption>
+                      </figure>
+
+                      <ul>
+                        <li>Detail 1</li>
+                        <li>Detail 2</li>
+                        <li>Detail 3</li>
+                        <li>Detail 4</li>
+                        <li>Detail 5</li>
+                      </ul>
+                    </div>
+
+                    <div className="card-back">
+                      <figure>
+                        <div className="img-bg"></div>
+                        <img
+                          src="https://images.unsplash.com/photo-1486162928267-e6274cb3106f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+                          alt="Brohm Lake"
+                        />
+                      </figure>
+
+                      <button>Book</button>
+
+                      <div className="design-container">
+                        <span className="design design--1"></span>
+                        <span className="design design--2"></span>
+                        <span className="design design--3"></span>
+                        <span className="design design--4"></span>
+                        <span className="design design--5"></span>
+                        <span className="design design--6"></span>
+                        <span className="design design--7"></span>
+                        <span className="design design--8"></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <a
+                  href="https://abubakersaeed.netlify.app/designs/d4-flip-card"
+                  className="abs-site-link"
+                  rel="nofollow noreferrer"
+                  target="_blank"
+                >
+                  abs/designs/d4-flip-card
+                </a>
+              </div>
+              {/* ===== END CARDS ===== */}
+
+              {/* ===== REVIEW ===== */}
+
+              <div className="div-review">
+                <div className="h1">
+                  <h1>Review</h1>
+                </div>
+
+                <div class="outerdiv">
+                  <div class="innerdiv">
+                    {/* <!-- div1 --> */}
+                    <div class="div1 eachdiv">
+                      <div class="userdetails">
+                        <div class="imgbox">
+                          <img
+                            src="https://raw.githubusercontent.com/RahulSahOfficial/testimonials_grid_section/5532c958b7d3c9b910a216b198fdd21c73112d84/images/image-daniel.jpg"
+                            alt=""
+                          />
+                        </div>
+                        <div class="detbox">
+                          <p class="name">Daniel Clifford</p>
+                          <p class="designation">Verified Graduate</p>
+                        </div>
+                      </div>
+                      <div class="review">
+                        <h4>
+                          I received a job offer mid-course, and the subjects I
+                          learned were current, if not more so, in the company I
+                          joined. I honestly feel I got every penny’s worth.
+                        </h4>
+                        <p>
+                          “ I was an EMT for many years before I joined the
+                          bootcamp. I’ve been looking to make a transition and
+                          have heard some people who had an amazing experience
+                          here. I signed up for the free intro course and found
+                          it incredibly fun! I enrolled shortly thereafter. The
+                          next 12 weeks was the best - and most grueling - time
+                          of my life. Since completing the course, I’ve
+                          successfully switched careers, working as a Software
+                          Engineer at a VR startup. ”
+                        </p>
+                      </div>
+                    </div>
+                    {/* <!-- div2 --> */}
+                    <div class="div2 eachdiv">
+                      <div class="userdetails">
+                        <div class="imgbox">
+                          <img
+                            src="https://raw.githubusercontent.com/RahulSahOfficial/testimonials_grid_section/5532c958b7d3c9b910a216b198fdd21c73112d84/images/image-jonathan.jpg"
+                            alt=""
+                          />
+                        </div>
+                        <div class="detbox">
+                          <p class="name">Jonathan Walters</p>
+                          <p class="designation">Verified Graduate</p>
+                        </div>
+                      </div>
+                      <div class="review">
+                        <h4>
+                          The team was very supportive and kept me motivated
+                        </h4>
+                        <p>
+                          “ I started as a total newbie with virtually no coding
+                          skills. I now work as a mobile engineer for a big
+                          company. This was one of the best investments I’ve
+                          made in myself. ”
+                        </p>
+                      </div>
+                    </div>
+                    {/* <!-- div3 --> */}
+                    <div class="div3 eachdiv">
+                      <div class="userdetails">
+                        <div class="imgbox">
+                          <img
+                            src="https://raw.githubusercontent.com/RahulSahOfficial/testimonials_grid_section/5532c958b7d3c9b910a216b198fdd21c73112d84/images/image-kira.jpg"
+                            alt=""
+                          />
+                        </div>
+                        <div class="detbox">
+                          <p class="name dark">Kira Whittle</p>
+                          <p class="designation dark">Verified Graduate</p>
+                        </div>
+                      </div>
+                      <div class="review dark">
+                        <h4>
+                          Such a life-changing experience. Highly recommended!
+                        </h4>
+                        <p>
+                          “ Before joining the bootcamp, I’ve never written a
+                          line of code. I needed some structure from
+                          professionals who can help me learn programming step
+                          by step. I was encouraged to enroll by a former
+                          student of theirs who can only say wonderful things
+                          about the program. The entire curriculum and staff did
+                          not disappoint. They were very hands-on and I never
+                          had to wait long for assistance. The agile team
+                          project, in particular, was outstanding. It took my
+                          learning to the next level in a way that no tutorial
+                          could ever have. In fact, I’ve often referred to it
+                          during interviews as an example of experience.”
+                        </p>
+                      </div>
+                    </div>
+                    {/* <!-- div4 --> */}
+                    <div class="div4 eachdiv">
+                      <div class="userdetails">
+                        <div class="imgbox">
+                          <img
+                            src="https://raw.githubusercontent.com/RahulSahOfficial/testimonials_grid_section/5532c958b7d3c9b910a216b198fdd21c73112d84/images/image-jeanette.jpg"
+                            alt=""
+                          />
+                        </div>
+                        <div class="detbox">
+                          <p class="name dark">Jeanette Harmon</p>
+                          <p class="designation dark">Verified Graduate</p>
+                        </div>
+                      </div>
+                      <div class="review dark">
+                        <h4>An overall wonderful and rewarding experience</h4>
+                        <p>
+                          “ Thank you for the wonderful experience! I now have a
+                          job I really enjoy, and make a good living while doing
+                          something I love. ”
+                        </p>
+                      </div>
+                    </div>
+                    {/* <!-- div5 --> */}
+                    <div class="div5 eachdiv">
+                      <div class="userdetails">
+                        <div class="imgbox">
+                          <img
+                            src="https://raw.githubusercontent.com/RahulSahOfficial/testimonials_grid_section/5532c958b7d3c9b910a216b198fdd21c73112d84/images/image-patrick.jpg"
+                            alt=""
+                          />
+                        </div>
+                        <div class="detbox">
+                          <p class="name">Patrick Abrams</p>
+                          <p class="designation">Verified Graduate</p>
+                        </div>
+                      </div>
+                      <div class="review">
+                        <h4>
+                          Awesome teaching support from TAs who did the bootcamp
+                          themselves. Getting guidance from them and learning
+                          from their experiences was easy.
+                        </h4>
+                        <p>
+                          “ The staff seem genuinely concerned about my progress
+                          which I find really refreshing. The program gave me
+                          the confidence necessary to be able to go out in the
+                          world and present myself as a capable junior
+                          developer. The standard is above the rest. You will
+                          get the personal attention you need from an incredible
+                          community of smart and amazing people. ”
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="attribution">
+                  Challenge by{" "}
+                  <a
+                    href="https://www.frontendmentor.io?ref=challenge"
+                    target="_blank"
+                  >
+                    Frontend Mentor
+                  </a>
+                  Coded by{" "}
+                  <a
+                    href="https://www.instagram.com/developer_sah/"
+                    target="_blank"
+                  >
+                    Rahul Sah
+                  </a>
+                  .
+                </div>
+              </div>
+
+              {/* ===== END REVIEW ===== */}
             </main>
           </section>
 
           <section>
-            <footer></footer>
+            <footer>
+              <h1>Hello</h1>
+            </footer>
           </section>
         </div>
       </div>
