@@ -85,7 +85,7 @@ function App() {
                 // className="flex justify-between items-center p-4"
               >
                 <img
-                  style={{ height: "150px", width: "150px", margin: "25px" }}
+                  style={{ height: "150px", width: "150px" }}
                   src={img3}
                   alt=""
                 />
