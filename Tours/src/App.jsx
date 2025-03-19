@@ -428,7 +428,6 @@ function App() {
 
                 <div class="outerdiv">
                   <div class="innerdiv">
-                    {/* <!-- div1 --> */}
                     <div class="div1 eachdiv">
                       <div class="userdetails">
                         <div class="imgbox">
@@ -461,7 +460,6 @@ function App() {
                         </p>
                       </div>
                     </div>
-                    {/* <!-- div2 --> */}
                     <div class="div2 eachdiv">
                       <div class="userdetails">
                         <div class="imgbox">
@@ -487,7 +485,6 @@ function App() {
                         </p>
                       </div>
                     </div>
-                    {/* <!-- div3 --> */}
                     <div class="div3 eachdiv">
                       <div class="userdetails">
                         <div class="imgbox">
@@ -517,11 +514,12 @@ function App() {
                           project, in particular, was outstanding. It took my
                           learning to the next level in a way that no tutorial
                           could ever have. In fact, I’ve often referred to it
-                          during interviews as an example of experience.”
+                          during interviews as an example of experience. It
+                          certainly helped me land a job as a full-stack 100%
+                          recommend! ”
                         </p>
                       </div>
                     </div>
-                    {/* <!-- div4 --> */}
                     <div class="div4 eachdiv">
                       <div class="userdetails">
                         <div class="imgbox">
@@ -544,7 +542,6 @@ function App() {
                         </p>
                       </div>
                     </div>
-                    {/* <!-- div5 --> */}
                     <div class="div5 eachdiv">
                       <div class="userdetails">
                         <div class="imgbox">
