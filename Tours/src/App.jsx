@@ -231,10 +231,10 @@ function App() {
                     <div class="date">15 Dec</div>
                     <i class="icon fa fa-home">1</i>
                     <div class="content">
-                      <h2>Thrilling Experiences</h2>
-                      <p>
-                        Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id
-                        luctus erat sagittis non. Ut blandit semper pretium.
+                      <h2 className="div-features">Thrilling Experiences</h2>
+                      <p className="div-features">
+                        Enjoy adrenaline-pumping activities like hiking,
+                        kayaking, and zip-lining in breathtaking locations.{" "}
                       </p>
                     </div>
                   </div>
@@ -242,10 +242,10 @@ function App() {
                     <div class="date">22 Oct</div>
                     <i class="icon fa fa-gift">2</i>
                     <div class="content">
-                      <h2>Lorem ipsum dolor sit amet</h2>
-                      <p>
-                        Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id
-                        luctus erat sagittis non. Ut blandit semper pretium.
+                      <h2 className="div-features">Expert-Guided Tours</h2>
+                      <p className="div-features">
+                        Our professional guides ensure a safe and unforgettable
+                        journey, packed with local insights and hidden gems.{" "}
                       </p>
                     </div>
                   </div>
@@ -253,10 +253,11 @@ function App() {
                     <div class="date">10 Jul</div>
                     <i class="icon fa fa-user">3</i>
                     <div class="content">
-                      <h2>Lorem ipsum dolor sit amet</h2>
-                      <p>
-                        Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id
-                        luctus erat sagittis non. Ut blandit semper pretium.
+                      <h2 className="div-features">All-Inclusive Packages</h2>
+                      <p className="div-features">
+                        Hassle-free adventures with transportation, gear, and
+                        accommodations included, so you can focus on the
+                        experience.{" "}
                       </p>
                     </div>
                   </div>
@@ -407,15 +408,6 @@ function App() {
                     </div>
                   </div>
                 </div>
-
-                <a
-                  href="https://abubakersaeed.netlify.app/designs/d4-flip-card"
-                  className="abs-site-link"
-                  rel="nofollow noreferrer"
-                  target="_blank"
-                >
-                  abs/designs/d4-flip-card
-                </a>
               </div>
               {/* ===== END CARDS ===== */}
 
@@ -513,10 +505,7 @@ function App() {
                           had to wait long for assistance. The agile team
                           project, in particular, was outstanding. It took my
                           learning to the next level in a way that no tutorial
-                          could ever have. In fact, I’ve often referred to it
-                          during interviews as an example of experience. It
-                          certainly helped me land a job as a full-stack 100%
-                          recommend! ”
+                          could ever have.”
                         </p>
                       </div>
                     </div>
@@ -566,30 +555,11 @@ function App() {
                           which I find really refreshing. The program gave me
                           the confidence necessary to be able to go out in the
                           world and present myself as a capable junior
-                          developer. The standard is above the rest. You will
-                          get the personal attention you need from an incredible
-                          community of smart and amazing people. ”
+                          developer. The standard is above the rest.”
                         </p>
                       </div>
                     </div>
                   </div>
-                </div>
-                <div class="attribution">
-                  Challenge by{" "}
-                  <a
-                    href="https://www.frontendmentor.io?ref=challenge"
-                    target="_blank"
-                  >
-                    Frontend Mentor
-                  </a>
-                  Coded by{" "}
-                  <a
-                    href="https://www.instagram.com/developer_sah/"
-                    target="_blank"
-                  >
-                    Rahul Sah
-                  </a>
-                  .
                 </div>
               </div>
 
@@ -598,7 +568,7 @@ function App() {
           </section>
 
           <section>
-            <footer>
+            <footer className="div-footer">
               <h1>Hello</h1>
             </footer>
           </section>

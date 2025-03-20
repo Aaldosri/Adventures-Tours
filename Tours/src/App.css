@@ -64,6 +64,10 @@ body {
   align-items: center;
 }
 
+.div-features {
+  width: 200px;
+}
+
 /* END FEATURES */
 
 /* CARDS */
@@ -83,12 +87,15 @@ body {
   justify-content: space-around; */
 }
 
-.h1-features {
-  display: flex;
-  justify-content: center;
-}
-
 /* END REVIEW */
+
+/* FOOTER */
+
+.div-footer {
+  height: 40vh;
+  background-color: #3d3d3d;
+}
+/* END FOOTER */
 
 /* ===== TIMELINE ======*/
 
