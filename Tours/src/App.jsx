@@ -5,6 +5,9 @@ import img3 from "../src/img/2.png";
 import img4 from "../src/img/pic4.jpg";
 import img5 from "../src/img/pic5.jpg";
 import img6 from "../src/img/pic6.jpg";
+
+import vid from "../src/img/vid.mp4";
+
 import "./App.scss";
 
 import { useState } from "react";
@@ -211,7 +214,7 @@ function App() {
               <div
                 style={{
                   background: "#218c74",
-                  height: "120vh",
+                  height: "100vh",
                   clipPath: "polygon(0 20%, 100% 0, 100% 80%, 0 100%)", // قص من الأعلى والأسفل
                 }}
               >
@@ -417,7 +420,6 @@ function App() {
                 <div className="h1">
                   <h1>Review</h1>
                 </div>
-
                 <div class="outerdiv">
                   <div class="innerdiv">
                     <div class="div1 eachdiv">
@@ -568,9 +570,107 @@ function App() {
           </section>
 
           <section>
-            <footer className="div-footer">
-              <h1>Hello</h1>
-            </footer>
+            <footer class="footer">
+              <div class="footer__parralax">
+                <div class="footer__parralax-trees"></div>
+                <div class="footer__parralax-moto"></div>
+                <div class="footer__parralax-secondplan"></div>
+                <div class="footer__parralax-premierplan"></div>
+                <div class="footer__parralax-voiture"></div>
+              </div>
+              <div class="container2">
+                <div class="footer__columns">
+                  <div class="footer__col">
+                    <h3 class="footer__col-title">
+                      <i data-feather="shopping-bag"></i>{" "}
+                      <span>La boutique</span>
+                    </h3>
+                    <nav class="footer__nav">
+                      <ul class="footer__nav-list">
+                        <li class="footer__nav-item">
+                          <a href="" class="footer__nav-link">
+                            Mentions légales
+                          </a>
+                        </li>
+                        <li class="footer__nav-item">
+                          <a href="" class="footer__nav-link">
+                            Politique de confidentialité
+                          </a>
+                        </li>
+                        <li class="footer__nav-item">
+                          <a href="" class="footer__nav-link">
+                            CGV
+                          </a>
+                        </li>
+                        <li class="footer__nav-item">
+                          <a href="" class="footer__nav-link">
+                            Livraisons et retours
+                          </a>
+                        </li>
+                        <li class="footer__nav-item">
+                          <a href="" class="footer__nav-link">
+                            Règlement concours
+                          </a>
+                        </li>
+                      </ul>
+                    </nav>
+                  </div>
+                  <div class="footer__col">
+                    <h3 class="footer__col-title">
+                      <i data-feather="share-2"></i> <span>Nos réseaux</span>
+                    </h3>
+                    <nav class="footer__nav">
+                      <ul class="footer__nav-list">
+                        <li class="footer__nav-item">
+                          <a href="" class="footer__nav-link">
+                            <i data-feather="youtube"></i>
+                            <span>Youtube</span>
+                          </a>
+                        </li>
+                        <li class="footer__nav-item">
+                          <a href="" class="footer__nav-link">
+                            <i data-feather="facebook"></i>
+                            <span>Facebook</span>
+                          </a>
+                        </li>
+                        <li class="footer__nav-item">
+                          <a href="" class="footer__nav-link">
+                            <i data-feather="instagram"></i>
+                            <span>Instagram</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </nav>
+                  </div>
+                  <div class="footer__col">
+                    <h3 class="footer__col-title">
+                      <i data-feather="send"></i> <span>Contact</span>
+                    </h3>
+                    <nav class="footer__nav">
+                      <ul class="footer__nav-list">
+                        <li class="footer__nav-item">
+                          <a
+                            href="mailto:contact.laboiserie@gmail.com"
+                            class="footer__nav-link"
+                          >
+                            contact.laboiserie@gmail.com
+                          </a>
+                        </li>
+                      </ul>
+                    </nav>
+                  </div>
+                </div>
+
+                <div class="footer__copyrights">
+                  <img
+                    style={{ height: "150px", width: "150px" }}
+                    src={img3}
+                    alt=""
+                  />
+                  <h2>Copy Right Abdullah 2025</h2>{" "}
+                </div>
+              </div>
+            </footer>{" "}
           </section>
         </div>
       </div>
