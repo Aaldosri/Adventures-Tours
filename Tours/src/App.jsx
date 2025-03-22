@@ -6,8 +6,6 @@ import img4 from "../src/img/pic4.jpg";
 import img5 from "../src/img/pic5.jpg";
 import img6 from "../src/img/pic6.jpg";
 
-import vid from "../src/img/vid.mp4";
-
 import "./App.scss";
 
 import { useState } from "react";
@@ -213,7 +211,7 @@ function App() {
               {/* ===== FEATURES ===== */}
               <div
                 style={{
-                  background: "#218c74",
+                  background: "#10ac84",
                   height: "100vh",
                   clipPath: "polygon(0 20%, 100% 0, 100% 80%, 0 100%)", // قص من الأعلى والأسفل
                 }}
@@ -283,7 +281,7 @@ function App() {
                           src="https://images.unsplash.com/photo-1486162928267-e6274cb3106f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
                           alt="Brohm Lake"
                         />
-                        <figcaption>Brohm Lake</figcaption>
+                        <figcaption>Jungle Adventure</figcaption>
                       </figure>
 
                       <ul>
@@ -307,6 +305,8 @@ function App() {
                       <button>Book</button>
 
                       <div className="design-container">
+                        <h1 className="h1-center">$220</h1>
+
                         <span className="design design--1"></span>
                         <span className="design design--2"></span>
                         <span className="design design--3"></span>
@@ -326,10 +326,10 @@ function App() {
                       <figure>
                         <div className="img-bg"></div>
                         <img
-                          src="https://images.unsplash.com/photo-1545436864-cd9bdd1ddebc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+                          src="https://images.unsplash.com/photo-1568454537842-d933259bb258?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                           alt="Image 2"
                         />
-                        <figcaption>Légende</figcaption>
+                        <figcaption>Hiking</figcaption>
                       </figure>
 
                       <ul>
@@ -345,7 +345,7 @@ function App() {
                       <figure>
                         <div className="img-bg"></div>
                         <img
-                          src="https://images.unsplash.com/photo-1545436864-cd9bdd1ddebc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+                          src="https://images.unsplash.com/photo-1568454537842-d933259bb258?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                           alt="image-2"
                         />
                       </figure>
@@ -353,6 +353,7 @@ function App() {
                       <button>Book</button>
 
                       <div className="design-container">
+                        <h1 className="h1-center">$330</h1>
                         <span className="design design--1"></span>
                         <span className="design design--2"></span>
                         <span className="design design--3"></span>
@@ -372,10 +373,10 @@ function App() {
                       <figure>
                         <div className="img-bg"></div>
                         <img
-                          src="https://images.unsplash.com/photo-1486162928267-e6274cb3106f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+                          src="https://images.unsplash.com/photo-1517971053567-8bde93bc6a58?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                           alt="Brohm Lake"
                         />
-                        <figcaption>Brohm Lake</figcaption>
+                        <figcaption>Ocean Cruise</figcaption>
                       </figure>
 
                       <ul>
@@ -391,14 +392,15 @@ function App() {
                       <figure>
                         <div className="img-bg"></div>
                         <img
-                          src="https://images.unsplash.com/photo-1486162928267-e6274cb3106f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+                          src="https://images.unsplash.com/photo-1517971053567-8bde93bc6a58?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                           alt="Brohm Lake"
                         />
                       </figure>
-
                       <button>Book</button>
 
                       <div className="design-container">
+                        <h1 className="h1-center">$390</h1>
+
                         <span className="design design--1"></span>
                         <span className="design design--2"></span>
                         <span className="design design--3"></span>
@@ -446,11 +448,7 @@ function App() {
                           bootcamp. I’ve been looking to make a transition and
                           have heard some people who had an amazing experience
                           here. I signed up for the free intro course and found
-                          it incredibly fun! I enrolled shortly thereafter. The
-                          next 12 weeks was the best - and most grueling - time
-                          of my life. Since completing the course, I’ve
-                          successfully switched careers, working as a Software
-                          Engineer at a VR startup. ”
+                          it incredibly fun! I enrolled shortly thereafter.”
                         </p>
                       </div>
                     </div>
@@ -474,8 +472,7 @@ function App() {
                         <p>
                           “ I started as a total newbie with virtually no coding
                           skills. I now work as a mobile engineer for a big
-                          company. This was one of the best investments I’ve
-                          made in myself. ”
+                          company.”
                         </p>
                       </div>
                     </div>
@@ -528,8 +525,7 @@ function App() {
                         <h4>An overall wonderful and rewarding experience</h4>
                         <p>
                           “ Thank you for the wonderful experience! I now have a
-                          job I really enjoy, and make a good living while doing
-                          something I love. ”
+                          job I really enjoy,”
                         </p>
                       </div>
                     </div>
