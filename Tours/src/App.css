@@ -56,6 +56,15 @@ body {
 
 /* END INTRODUCE */
 
+/* EXPLOER */
+
+.h2-exploer {
+  font-size: 30px !important;
+  display: flex;
+  justify-content: center;
+}
+/* END EXPLOER */
+
 /* FEATURES */
 
 .h1 {
@@ -92,7 +101,7 @@ body {
 
 .div-review {
   background-color: #10ac84;
-  height: 130vh;
+  min-height: 130vh;
   /* display: flex;
   justify-content: space-around; */
 }
@@ -113,28 +122,35 @@ body {
 }
 /* END FOOTER */
 
-/* END FOOTER */
+/* BOOK */
 
-.div-book {
-  height: 110vh;
-  width: 100vw;
+.section-book {
   display: flex;
   justify-content: center;
   align-items: center;
   align-content: center;
+  min-height: 140vh;
+}
+
+.div-book {
+  height: 110vh;
+  width: 100vw;
 }
 
 .book-form {
   position: relative;
   height: 600px;
   width: 1200px;
-  background-image: url("https://cdn.pixabay.com/photo/2016/11/21/16/53/waterfalls-1846424_1280.jpg");
+  background-image: url("https://cdn.pixabay.com/photo/2019/07/27/07/24/forest-4366094_1280.jpg");
   background-size: cover;
   background-position: center;
-  display: flex;
-  justify-content: flex-start;
   overflow: hidden; /* يمنع خروج أي عنصر خارج المربع */
   flex-direction: column;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  mix-blend-mode: multiply;
+  z-index: 0; /* يضمن بقاء الميلان في الخلف */
 }
 
 /* الجزء الأيسر بدون ميلان */
@@ -147,13 +163,63 @@ body {
   left: 0;
   width: 50%; /* نسبة التغطية من اليسار */
   height: 100%;
-  background: rgba(255, 255, 255, 0.5); /* لون أبيض شفاف */
+  background: rgba(255, 255, 255, 0.613); /* لون أبيض شفاف */
   transform: skewX(-10deg); /* جعل الشكل مائلاً */
   transform-origin: top left;
   z-index: 1;
 }
 
-/* END FOOTER */
+.form-container {
+  position: relative;
+  /* background: rgba(255, 255, 255, 0.9); */
+  padding: 25px;
+  border-radius: 15px;
+  /* box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1); */
+  text-align: center;
+  width: 400px;
+  z-index: 1;
+}
+
+/* العنوان */
+.form-container h1 {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* الحقول */
+.form-container input {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: all 0.3s ease-in-out;
+  background: rgba(255, 255, 255, 0.9);
+}
+
+/* تأثير عند التركيز */
+.form-container input:focus {
+  border-color: #555;
+  outline: none;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* زر التسجيل */
+.form-container input[type="button"] {
+  background-color: #333;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.form-container input[type="button"]:hover {
+  background-color: #555;
+}
+
+/* END BOOK */
 
 /* ===== TIMELINE ======*/
 
@@ -1091,7 +1157,7 @@ button {
 
 button:hover,
 button:focus {
-  color: var(--primary);
+  color: #10ac84;
   background: hsla(var(--hue), 25%, 10%, 0.2);
   border-color: currentColor;
 }
@@ -1216,172 +1282,3 @@ button:focus + .design-container {
   font-family: "Segoe UI", -apple-system, BlinkMacSystemFont, sans-serif;
 }
 /* ===== END CARDS ======*/
-
-/* ===== BOOK ======*/
-*,
-:after,
-:before {
-  box-sizing: border-box;
-}
-.clearfix:after,
-.clearfix:before {
-  content: "";
-  display: table;
-}
-.clearfix:after {
-  clear: both;
-  display: block;
-}
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-.login-wrap {
-  width: 100%;
-  margin: auto;
-  max-width: 525px;
-  min-height: 670px;
-  position: relative;
-  background: url(https://raw.githubusercontent.com/khadkamhn/day-01-login-form/master/img/bg.jpg)
-    no-repeat center;
-  box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24),
-    0 17px 50px 0 rgba(0, 0, 0, 0.19);
-}
-.login-html {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  padding: 90px 70px 50px 70px;
-  background: rgba(40, 57, 101, 0.9);
-}
-.login-html .sign-in-htm,
-.login-html .sign-up-htm {
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  position: absolute;
-  transform: rotateY(180deg);
-  backface-visibility: hidden;
-  transition: all 0.4s linear;
-}
-.login-html .sign-in,
-.login-html .sign-up,
-.login-form .group .check {
-  display: none;
-}
-.login-html .tab,
-.login-form .group .label,
-.login-form .group .button {
-  text-transform: uppercase;
-}
-.login-html .tab {
-  font-size: 22px;
-  margin-right: 15px;
-  padding-bottom: 5px;
-  margin: 0 15px 10px 0;
-  display: inline-block;
-  border-bottom: 2px solid transparent;
-}
-.login-html .sign-in:checked + .tab,
-.login-html .sign-up:checked + .tab {
-  color: #fff;
-  border-color: #1161ee;
-}
-.login-form {
-  min-height: 345px;
-  position: relative;
-  perspective: 1000px;
-  transform-style: preserve-3d;
-}
-.login-form .group {
-  margin-bottom: 15px;
-}
-.login-form .group .label,
-.login-form .group .input,
-.login-form .group .button {
-  width: 100%;
-  color: #fff;
-  display: block;
-}
-.login-form .group .input,
-.login-form .group .button {
-  border: none;
-  padding: 15px 20px;
-  border-radius: 25px;
-  background: rgba(255, 255, 255, 0.1);
-}
-.login-form .group input[data-type="password"] {
-  text-security: circle;
-  -webkit-text-security: circle;
-}
-.login-form .group .label {
-  color: #aaa;
-  font-size: 12px;
-}
-.login-form .group .button {
-  background: #1161ee;
-}
-.login-form .group label .icon {
-  width: 15px;
-  height: 15px;
-  border-radius: 2px;
-  position: relative;
-  display: inline-block;
-  background: rgba(255, 255, 255, 0.1);
-}
-.login-form .group label .icon:before,
-.login-form .group label .icon:after {
-  content: "";
-  width: 10px;
-  height: 2px;
-  background: #fff;
-  position: absolute;
-  transition: all 0.2s ease-in-out 0s;
-}
-.login-form .group label .icon:before {
-  left: 3px;
-  width: 5px;
-  bottom: 6px;
-  transform: scale(0) rotate(0);
-}
-.login-form .group label .icon:after {
-  top: 6px;
-  right: 0;
-  transform: scale(0) rotate(0);
-}
-.login-form .group .check:checked + label {
-  color: #fff;
-}
-.login-form .group .check:checked + label .icon {
-  background: #1161ee;
-}
-.login-form .group .check:checked + label .icon:before {
-  transform: scale(1) rotate(45deg);
-}
-.login-form .group .check:checked + label .icon:after {
-  transform: scale(1) rotate(-45deg);
-}
-.login-html
-  .sign-in:checked
-  + .tab
-  + .sign-up
-  + .tab
-  + .login-form
-  .sign-in-htm {
-  transform: rotate(0);
-}
-.login-html .sign-up:checked + .tab + .login-form .sign-up-htm {
-  transform: rotate(0);
-}
-
-.hr {
-  height: 2px;
-  margin: 60px 0 50px 0;
-  background: rgba(255, 255, 255, 0.2);
-}
-.foot-lnk {
-  text-align: center;
-}
-/* ===== END BOOK ======*/

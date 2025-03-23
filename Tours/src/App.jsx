@@ -134,58 +134,40 @@ function App() {
                       <div class="wrapper">
                         <div class="box vintage">
                           <img
-                            src="https://images.unsplash.com/photo-1500049242364-5f500807cdd7?crop=entropy&cs=srgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2ODAyOTk3ODE&ixlib=rb-4.0.3&q=85"
+                            src="https://cdn.pixabay.com/photo/2018/08/29/02/59/pier-3639038_1280.jpg"
                             alt="EMMYLOU"
                           />
-                          <h2>Norway</h2>
-                          <p>The mountain ridge of norway</p>
+                          <h2 className="h2-exploer">Ocean</h2>
                         </div>
                       </div>
                       <div class="wrapper">
-                        <div class="box w-content">
+                        <div class="box vintage">
                           <img
-                            src="https://images.unsplash.com/photo-1516739711484-6f80025660c6?crop=entropy&cs=srgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2ODAyOTk3ODE&ixlib=rb-4.0.3&q=85
+                            src="https://cdn.pixabay.com/photo/2022/08/15/03/07/path-7387018_1280.jpg
   "
                             alt="Jenny of Oldstones"
                           />
                           <div class="frame">
-                            <h2>Australia</h2>
+                            <h2 className="h2-exploer">Jungle</h2>
                           </div>
                         </div>
                       </div>
                       <div class="wrapper">
-                        <div class="box postcard">
+                        <div class="box vintage">
                           <img
-                            src="https://images.unsplash.com/photo-1570512431473-7345c8dbfa4c?crop=entropy&cs=srgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2ODAzMDAyMzU&ixlib=rb-4.0.3&q=85"
+                            src="https://cdn.pixabay.com/photo/2021/02/05/01/22/man-5983064_1280.jpg"
                             alt="BOX"
                           />
-                          <h2>
-                            Lake Hanoi <p class="hide">VIETNAM</p>
-                          </h2>
+                          <h2 className="h2-exploer">Hiking</h2>
                         </div>
                       </div>
                       <div class="wrapper">
-                        <div class="box zoom-in">
+                        <div class="box zoom-out">
                           <img
-                            src="https://images.unsplash.com/photo-1603161472885-39edf23d7a3e?crop=entropy&cs=srgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2ODAzMDA0MDI&ixlib=rb-4.0.3&q=85
+                            src="https://cdn.pixabay.com/photo/2018/05/10/23/04/giglio-3389078_1280.jpg
 "
                             alt="Postcards From Italy"
                           />
-                          <h2>Postcard From Sweden</h2>
-                          <p>june 2022-07-21</p>
-                        </div>
-                      </div>
-                      <div class="wrapper">
-                        <div class="box blury-card">
-                          <img
-                            src="https://images.unsplash.com/photo-1632853073412-782bf0279d65?crop=entropy&cs=srgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2ODAzMDA2MTI&ixlib=rb-4.0.3&q=85
-"
-                            alt="Blue Ridge Mountains"
-                          />
-                          <div class="frame">
-                            <h2>Las Vegas</h2>
-                            <p>USA</p>
-                          </div>
                         </div>
                       </div>
                       <div class="wrapper">
@@ -195,12 +177,15 @@ function App() {
 "
                             alt="Melody Noir"
                           />
-                          <div class="frame">
-                            <h2>
-                              Nichlas <span>Wijk</span>
-                            </h2>
-                            <p>CodePen Challange</p>
-                          </div>
+                        </div>
+                      </div>
+                      <div class="wrapper">
+                        <div class="box zoom-out">
+                          <img
+                            src="https://cdn.pixabay.com/photo/2022/11/20/19/33/northern-norway-7605060_1280.jpg
+"
+                            alt="Blue Ridge Mountains"
+                          />
                         </div>
                       </div>
                     </div>
@@ -285,11 +270,11 @@ function App() {
                       </figure>
 
                       <ul>
-                        <li>Detail 1</li>
-                        <li>Detail 2</li>
-                        <li>Detail 3</li>
-                        <li>Detail 4</li>
-                        <li>Detail 5</li>
+                        <li>Duration: 3 Days</li>
+                        <li>Explore wildlife in tropical forests</li>
+                        <li>Hike through lush greenery</li>
+                        <li>Camping under the stars</li>
+                        <li>Traditional local meals</li>
                       </ul>
                     </div>
 
@@ -333,11 +318,11 @@ function App() {
                       </figure>
 
                       <ul>
-                        <li>Detail 1</li>
-                        <li>Detail 2</li>
-                        <li>Detail 3</li>
-                        <li>Detail 4</li>
-                        <li>Detail 5</li>
+                        <li>Duration: 5 Days</li>
+                        <li>Trails for all fitness levels</li>
+                        <li>Scenic mountain views</li>
+                        <li>Camping and cozy lodges</li>
+                        <li>Wildlife spotting opportunities</li>
                       </ul>
                     </div>
 
@@ -353,7 +338,7 @@ function App() {
                       <button>Book</button>
 
                       <div className="design-container">
-                        <h1 className="h1-center">$330</h1>
+                        <h1 className="h1-center">$350</h1>
                         <span className="design design--1"></span>
                         <span className="design design--2"></span>
                         <span className="design design--3"></span>
@@ -380,11 +365,11 @@ function App() {
                       </figure>
 
                       <ul>
-                        <li>Detail 1</li>
-                        <li>Detail 2</li>
-                        <li>Detail 3</li>
-                        <li>Detail 4</li>
-                        <li>Detail 5</li>
+                        <li>Duration: 7 Days</li>
+                        <li>Explore exotic coastal destinations</li>
+                        <li>Snorkeling and water sports</li>
+                        <li>Luxury cruise amenities</li>
+                        <li>Exclusive excursions to remote islands</li>
                       </ul>
                     </div>
 
@@ -399,7 +384,7 @@ function App() {
                       <button>Book</button>
 
                       <div className="design-container">
-                        <h1 className="h1-center">$390</h1>
+                        <h1 className="h1-center">$440</h1>
 
                         <span className="design design--1"></span>
                         <span className="design design--2"></span>
@@ -420,7 +405,7 @@ function App() {
 
               <div className="div-review">
                 <div className="h1">
-                  <h1>Review</h1>
+                  <h1>We make people genuinely happy</h1>
                 </div>
                 <div class="outerdiv">
                   <div class="innerdiv">
@@ -565,105 +550,14 @@ function App() {
 
               {/* ===== BOOK ===== */}
 
-              <section style={{ height: "100vh", margin: "20vh" }}>
-                <div class="login-wrap">
-                  <div class="login-html">
-                    <input
-                      id="tab-1"
-                      type="radio"
-                      name="tab"
-                      class="sign-in"
-                      checked
-                    />
-                    <label for="tab-1" class="tab">
-                      Sign In
-                    </label>
-                    <input id="tab-2" type="radio" name="tab" class="sign-up" />
-                    <label for="tab-2" class="tab">
-                      Sign Up
-                    </label>
-                    <div class="login-form">
-                      <div class="sign-in-htm">
-                        <div class="group">
-                          <label for="user" class="label">
-                            Username
-                          </label>
-                          <input id="user" type="text" class="input" />
-                        </div>
-                        <div class="group">
-                          <label for="pass" class="label">
-                            Password
-                          </label>
-                          <input
-                            id="pass"
-                            type="password"
-                            class="input"
-                            data-type="password"
-                          />
-                        </div>
-                        <div class="group">
-                          <input
-                            id="check"
-                            type="checkbox"
-                            class="check"
-                            checked
-                          />
-                          <label for="check">
-                            <span class="icon"></span> Keep me Signed in
-                          </label>
-                        </div>
-                        <div class="group">
-                          <input type="submit" class="button" value="Sign In" />
-                        </div>
-                        <div class="hr"></div>
-                        <div class="foot-lnk">
-                          <a href="#forgot">Forgot Password?</a>
-                        </div>
-                      </div>
-                      <div class="sign-up-htm">
-                        <div class="group">
-                          <label for="user" class="label">
-                            Username
-                          </label>
-                          <input id="user" type="text" class="input" />
-                        </div>
-                        <div class="group">
-                          <label for="pass" class="label">
-                            Password
-                          </label>
-                          <input
-                            id="pass"
-                            type="password"
-                            class="input"
-                            data-type="password"
-                          />
-                        </div>
-                        <div class="group">
-                          <label for="pass" class="label">
-                            Repeat Password
-                          </label>
-                          <input
-                            id="pass"
-                            type="password"
-                            class="input"
-                            data-type="password"
-                          />
-                        </div>
-                        <div class="group">
-                          <label for="pass" class="label">
-                            Email Address
-                          </label>
-                          <input id="pass" type="text" class="input" />
-                        </div>
-                        <div class="group">
-                          <input type="submit" class="button" value="Sign Up" />
-                        </div>
-                        <div class="hr"></div>
-                        <div class="foot-lnk">
-                          <label for="tab-1">Already Member?</label>
-                        </div>
-                      </div>
-                    </div>
+              <section className="section-book">
+                <div className="book-form">
+                  <div class="form-container">
+                    <h1 style={{ fontSize: "2.5rem" }}>Start Booking Now</h1>
+
+                    <input type="email" placeholder="Full Name" />
+                    <input type="password" placeholder="Email address" />
+                    <input type="button" value="Join Us" />
                   </div>
                 </div>
               </section>
@@ -685,7 +579,7 @@ function App() {
                   <div class="footer__col">
                     <h3 class="footer__col-title">
                       <i data-feather="shopping-bag"></i>{" "}
-                      <span>La boutique</span>
+                      <span>Contact Us</span>
                     </h3>
                     <nav class="footer__nav">
                       <ul class="footer__nav-list">
@@ -704,22 +598,12 @@ function App() {
                             CGV
                           </a>
                         </li>
-                        <li class="footer__nav-item">
-                          <a href="" class="footer__nav-link">
-                            Livraisons et retours
-                          </a>
-                        </li>
-                        <li class="footer__nav-item">
-                          <a href="" class="footer__nav-link">
-                            Règlement concours
-                          </a>
-                        </li>
                       </ul>
                     </nav>
                   </div>
                   <div class="footer__col">
                     <h3 class="footer__col-title">
-                      <i data-feather="share-2"></i> <span>Nos réseaux</span>
+                      <i data-feather="share-2"></i> <span>Social Media</span>
                     </h3>
                     <nav class="footer__nav">
                       <ul class="footer__nav-list">
@@ -746,7 +630,7 @@ function App() {
                   </div>
                   <div class="footer__col">
                     <h3 class="footer__col-title">
-                      <i data-feather="send"></i> <span>Contact</span>
+                      <i data-feather="send"></i> <span>Privacy policy</span>
                     </h3>
                     <nav class="footer__nav">
                       <ul class="footer__nav-list">
@@ -769,7 +653,7 @@ function App() {
                     src={img3}
                     alt=""
                   />
-                  <h2>Copy Right Abdullah 2025</h2>{" "}
+                  <h2>Copy Right @Abdullah 2025</h2>{" "}
                 </div>
               </div>
             </footer>{" "}
