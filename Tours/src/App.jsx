@@ -13,60 +13,52 @@ import { useState } from "react";
 function App() {
   return (
     <>
-      <div
-        // className="w-screen"
-        style={{
-          padding: "50px",
-          maxHeight: "100vh",
-          width: "100vw",
-        }}
-      >
-        <div class="navigation ">
-          <input
-            type="checkbox"
-            class="navigation__checkbox"
-            id="navi-toggle"
-          ></input>
-
-          <label for="navi-toggle" class="navigation__button">
-            <span class="navigation__icon">&nbsp;</span>
-          </label>
-
-          <div class="navigation__background">&nbsp;</div>
-
-          <nav class="navigation__nav">
-            <ul class="navigation__list">
-              <li class="navigation__item">
-                <a href="#" class="navigation__link">
-                  <span>01</span>Exploer
-                </a>
-              </li>
-              <li class="navigation__item">
-                <a href="#" class="navigation__link">
-                  <span>02</span>Features
-                </a>
-              </li>
-              <li class="navigation__item">
-                <a href="#" class="navigation__link">
-                  <span>03</span>Review
-                </a>
-              </li>
-              <li class="navigation__item">
-                <a href="#" class="navigation__link">
-                  <span>04</span>Popular tours
-                </a>
-              </li>
-              <li class="navigation__item">
-                <a href="#" class="navigation__link">
-                  <span>05</span>Book now
-                </a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-
+      <div className="div-body">
         <div style={{ background: "#F1F0E9" }}>
           <section>
+            <div class="navigation ">
+              <input
+                type="checkbox"
+                class="navigation__checkbox"
+                id="navi-toggle"
+              ></input>
+
+              <label for="navi-toggle" class="navigation__button">
+                <span class="navigation__icon">&nbsp;</span>
+              </label>
+
+              <div class="navigation__background">&nbsp;</div>
+
+              <nav class="navigation__nav">
+                <ul class="navigation__list">
+                  <li class="navigation__item">
+                    <a href="#" class="navigation__link">
+                      <span>01</span>Exploer
+                    </a>
+                  </li>
+                  <li class="navigation__item">
+                    <a href="#" class="navigation__link">
+                      <span>02</span>Features
+                    </a>
+                  </li>
+                  <li class="navigation__item">
+                    <a href="#" class="navigation__link">
+                      <span>03</span>Popular tours
+                    </a>
+                  </li>
+                  <li class="navigation__item">
+                    <a href="#" class="navigation__link">
+                      <span>04</span>Review
+                    </a>
+                  </li>
+                  <li class="navigation__item">
+                    <a href="#" class="navigation__link">
+                      <span>05</span>Book now
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
             <header
               style={{
                 background: "gray",
@@ -567,13 +559,6 @@ function App() {
 
           <section>
             <footer class="footer">
-              <div class="footer__parralax">
-                <div class="footer__parralax-trees"></div>
-                <div class="footer__parralax-moto"></div>
-                <div class="footer__parralax-secondplan"></div>
-                <div class="footer__parralax-premierplan"></div>
-                <div class="footer__parralax-voiture"></div>
-              </div>
               <div class="container2">
                 <div class="footer__columns">
                   <div class="footer__col">
