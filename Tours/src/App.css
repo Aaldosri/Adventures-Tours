@@ -77,12 +77,27 @@ body {
 
 /* FEATURES */
 
+.section-features {
+  background: #10ac84;
+  height: 120vh;
+  clip-path: polygon(
+    0 20%,
+    100% 0,
+    100% 80%,
+    0 100%
+  ); /* قص من الأعلى والأسفل */
+}
+
 .h1 {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
+.h1-color {
+  color: #222;
+}
 .div-features {
   width: 200px;
 }
@@ -248,7 +263,7 @@ body {
 .timeline {
   position: relative;
   width: 100%;
-  max-width: 1340px;
+  max-width: 800px;
   margin: auto;
   padding: 15px 0;
   height: 100%;
@@ -460,7 +475,7 @@ body {
   padding: 40px 0;
 }
 
-.content {
+.content2 {
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* 3 أعمدة متساوية */
 }
@@ -1303,6 +1318,95 @@ button:focus + .design-container {
 }
 /* ===== END CARDS ======*/
 
+/* ===== END CARDS ======*/
+
+.site-footer {
+  background-color: #222;
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-columns {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding-bottom: 20px;
+}
+
+.footer-column {
+  text-align: left;
+}
+
+.footer-column-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-nav-list {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-nav-item {
+  margin-bottom: 8px;
+}
+
+.footer-nav-link {
+  color: #10ac84;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+/* .footer-nav-link:hover {
+  color: #10ac84;
+} */
+
+.footer-copyrights {
+  border-top: 1px solid #555;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-copyrights img {
+  width: 150px;
+  height: 150px;
+}
+
+.footer-copyrights h2 {
+  font-size: 16px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.span {
+  margin: auto;
+  font-size: 1.5rem;
+}
+
+.span-color {
+  color: #10ac84;
+}
+
+.li-size {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* ===== END FOOTER ======*/
+
 /* ===== RESPONSIVE ======*/
 
 @media (max-width: 1000px) {
@@ -1339,5 +1443,20 @@ button:focus + .design-container {
     width: 100%; /* يغطي كل العرض */
     left: 50%;
     transform: translateX(-50%); /* يجعله في المنتصف */
+  }
+  .section-features {
+    height: 165vh;
+  }
+  .div-features {
+    width: 150px;
+  }
+}
+
+@media (max-width: 375px) {
+  .section-features {
+    height: 220vh;
+  }
+  .div-features {
+    width: 150px;
   }
 }

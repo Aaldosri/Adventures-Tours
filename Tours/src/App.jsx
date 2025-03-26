@@ -104,13 +104,12 @@ function App() {
 
                 <div className="div-inroduce">
                   <div class="container2">
-                    <h1 class="header">
+                    <h1 className="header">
                       Explore the Nature and Embrace the Adventure
                     </h1>
                     <p
                       style={{
                         margin: "10px",
-                        width: "100%",
                         textAlign: "center",
                         display: "flex",
                         justifyContent: "center",
@@ -122,7 +121,7 @@ function App() {
                       adventure. From soaring peaks to winding rivers, every
                       journey is a new story waiting to unfold!
                     </p>
-                    <div class="content">
+                    <div class="content2">
                       <div class="wrapper">
                         <div class="box vintage">
                           <img
@@ -186,13 +185,7 @@ function App() {
               </div>
 
               {/* ===== FEATURES ===== */}
-              <div
-                style={{
-                  background: "#10ac84",
-                  height: "100vh",
-                  clipPath: "polygon(0 20%, 100% 0, 100% 80%, 0 100%)", // قص من الأعلى والأسفل
-                }}
-              >
+              <section className="section-features">
                 {/* <div className="h1">
                   <h1
                     style={{
@@ -206,7 +199,6 @@ function App() {
                 </div> */}
                 <div class="timeline">
                   <div class="container left">
-                    <div class="date">15 Dec</div>
                     <i class="icon fa fa-home">1</i>
                     <div class="content">
                       <h2 className="div-features">Thrilling Experiences</h2>
@@ -217,7 +209,6 @@ function App() {
                     </div>
                   </div>
                   <div class="container right">
-                    <div class="date">22 Oct</div>
                     <i class="icon fa fa-gift">2</i>
                     <div class="content">
                       <h2 className="div-features">Expert-Guided Tours</h2>
@@ -228,7 +219,6 @@ function App() {
                     </div>
                   </div>
                   <div class="container left">
-                    <div class="date">10 Jul</div>
                     <i class="icon fa fa-user">3</i>
                     <div class="content">
                       <h2 className="div-features">All-Inclusive Packages</h2>
@@ -240,13 +230,13 @@ function App() {
                     </div>
                   </div>
                 </div>{" "}
-              </div>
+              </section>
 
               {/* ===== END FEATURES ===== */}
 
               {/* ===== CARDS ===== */}
               <div className="h1">
-                <h1>MOST POPULAR TOURS</h1>
+                <h1 className="h1-color">MOST POPULAR TOURS</h1>
               </div>
               <div className="div-cards">
                 <div className="flip-card-container" style={{ "--hue": 220 }}>
@@ -262,7 +252,7 @@ function App() {
                       </figure>
 
                       <ul>
-                        <li>Duration: 3 Days</li>
+                        <li className="li-size">Duration: 3 Days</li>
                         <li>Explore wildlife in tropical forests</li>
                         <li>Hike through lush greenery</li>
                         <li>Camping under the stars</li>
@@ -310,7 +300,7 @@ function App() {
                       </figure>
 
                       <ul>
-                        <li>Duration: 5 Days</li>
+                        <li className="li-size">Duration: 5 Days</li>
                         <li>Trails for all fitness levels</li>
                         <li>Scenic mountain views</li>
                         <li>Camping and cozy lodges</li>
@@ -357,7 +347,7 @@ function App() {
                       </figure>
 
                       <ul>
-                        <li>Duration: 7 Days</li>
+                        <li className="li-size">Duration: 7 Days</li>
                         <li>Explore exotic coastal destinations</li>
                         <li>Snorkeling and water sports</li>
                         <li>Luxury cruise amenities</li>
@@ -397,7 +387,7 @@ function App() {
 
               <div className="div-review">
                 <div className="h1">
-                  <h1>We make people genuinely happy</h1>
+                  <h1 className="h1-color">We make people genuinely happy</h1>
                 </div>
                 <div class="outerdiv">
                   <div class="innerdiv">
@@ -557,74 +547,73 @@ function App() {
             </main>
           </section>
 
+          {/* ===== FOOTER ===== */}
+
           <section>
-            <footer class="footer">
-              <div class="container2">
-                <div class="footer__columns">
-                  <div class="footer__col">
-                    <h3 class="footer__col-title">
+            <footer className="site-footer">
+              <div className="footer-container">
+                <div className="footer-columns">
+                  <div className="footer-column">
+                    <h3 className="footer-column-title">
                       <i data-feather="shopping-bag"></i>{" "}
-                      <span>Contact Us</span>
+                      <span className="span">Contact Us</span>
                     </h3>
-                    <nav class="footer__nav">
-                      <ul class="footer__nav-list">
-                        <li class="footer__nav-item">
-                          <a href="" class="footer__nav-link">
-                            Mentions légales
+                    <nav className="footer-nav">
+                      <ul className="footer-nav-list">
+                        <li className="footer-nav-item">
+                          <a href="" className="span-color">
+                            <span className="span-color">Contact</span>
                           </a>
                         </li>
-                        <li class="footer__nav-item">
-                          <a href="" class="footer__nav-link">
-                            Politique de confidentialité
-                          </a>
-                        </li>
-                        <li class="footer__nav-item">
-                          <a href="" class="footer__nav-link">
-                            CGV
+                        <li className="footer-nav-item">
+                          <a href="" className="span-color">
+                            <span className="span-color">Us</span>
                           </a>
                         </li>
                       </ul>
                     </nav>
                   </div>
-                  <div class="footer__col">
-                    <h3 class="footer__col-title">
-                      <i data-feather="share-2"></i> <span>Social Media</span>
+                  <div className="footer-column">
+                    <h3 className="footer-column-title">
+                      <i data-feather="share-2"></i>{" "}
+                      <span className="span">Social Media</span>
                     </h3>
-                    <nav class="footer__nav">
-                      <ul class="footer__nav-list">
-                        <li class="footer__nav-item">
-                          <a href="" class="footer__nav-link">
-                            <i data-feather="youtube"></i>
-                            <span>Youtube</span>
+                    <nav className="footer-nav">
+                      <ul className="footer-nav-list">
+                        <li className="footer-nav-item">
+                          <a href="" className="footer-nav-link">
+                            <i data-feather="youtube"></i>{" "}
+                            <span className="span-color">Youtube</span>
                           </a>
                         </li>
-                        <li class="footer__nav-item">
-                          <a href="" class="footer__nav-link">
-                            <i data-feather="facebook"></i>
-                            <span>Facebook</span>
+                        <li className="footer-nav-item">
+                          <a href="" className="footer-nav-link">
+                            <i data-feather="facebook"></i>{" "}
+                            <span className="span-color">Facebook</span>
                           </a>
                         </li>
-                        <li class="footer__nav-item">
-                          <a href="" class="footer__nav-link">
-                            <i data-feather="instagram"></i>
-                            <span>Instagram</span>
+                        <li className="footer-nav-item">
+                          <a href="" className="footer-nav-link">
+                            <i data-feather="instagram"></i>{" "}
+                            <span className="span-color">Instagram</span>
                           </a>
                         </li>
                       </ul>
                     </nav>
                   </div>
-                  <div class="footer__col">
-                    <h3 class="footer__col-title">
-                      <i data-feather="send"></i> <span>Privacy policy</span>
+                  <div className="footer-column">
+                    <h3 className="footer-column-title">
+                      <i data-feather="send"></i>{" "}
+                      <span className="span">Privacy Policy</span>
                     </h3>
-                    <nav class="footer__nav">
-                      <ul class="footer__nav-list">
-                        <li class="footer__nav-item">
+                    <nav className="footer-nav">
+                      <ul className="footer-nav-list">
+                        <li className="footer-nav-item">
                           <a
                             href="mailto:contact.laboiserie@gmail.com"
-                            class="footer__nav-link"
+                            className="footer-nav-link"
                           >
-                            contact.laboiserie@gmail.com
+                            <span className="span-color"> contact@.com</span>
                           </a>
                         </li>
                       </ul>
@@ -632,17 +621,15 @@ function App() {
                   </div>
                 </div>
 
-                <div class="footer__copyrights">
-                  <img
-                    style={{ height: "150px", width: "150px" }}
-                    src={img3}
-                    alt=""
-                  />
-                  <h2>Copy Right @Abdullah 2025</h2>{" "}
+                <div className="footer-copyrights">
+                  <img src={img3} alt="Logo" />
+                  <h2>Copy Right @Abdullah 2025</h2>
                 </div>
               </div>
-            </footer>{" "}
+            </footer>
           </section>
+
+          {/* ===== END FOOTER ===== */}
         </div>
       </div>
     </>
