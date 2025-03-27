@@ -236,7 +236,7 @@ function App() {
 
               {/* ===== CARDS ===== */}
               <div className="h1">
-                <h1 className="h1-color">MOST POPULAR TOURS</h1>
+                <h1 className="header2">MOST POPULAR TOURS</h1>
               </div>
               <div className="div-cards">
                 <div className="flip-card-container" style={{ "--hue": 220 }}>
@@ -387,7 +387,7 @@ function App() {
 
               <div className="div-review">
                 <div className="h1">
-                  <h1 className="h1-color">We make people genuinely happy</h1>
+                  <h1 className="h1-review">We make people genuinely happy</h1>
                 </div>
                 <div class="outerdiv">
                   <div class="innerdiv">

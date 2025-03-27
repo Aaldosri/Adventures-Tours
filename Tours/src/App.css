@@ -131,6 +131,11 @@ body {
   justify-content: space-around; */
 }
 
+.h1-review {
+  margin-top: 10vh;
+  font-size: 44px;
+}
+
 /* END REVIEW */
 
 /* FOOTER */
@@ -154,7 +159,7 @@ body {
   justify-content: center;
   align-items: center;
   align-content: center;
-  min-height: 140vh;
+  min-height: 100vh;
 }
 
 .div-book {
@@ -462,6 +467,14 @@ body {
 }
 
 .header {
+  color: #222;
+  font-size: 44px;
+  text-align: center;
+  text-shadow: 1px 7px 25px;
+}
+
+.header2 {
+  color: #222;
   font-size: 44px;
   text-align: center;
   text-shadow: 1px 7px 25px;
@@ -1449,6 +1462,16 @@ button:focus + .design-container {
   }
   .div-features {
     width: 150px;
+  }
+  .content2 {
+    display: flex;
+    flex-direction: column;
+  }
+  .h1-review {
+    margin-bottom: 5vh;
+  }
+  .header2 {
+    margin-top: 10vh;
   }
 }
 
