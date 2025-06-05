@@ -102,6 +102,12 @@ body {
   width: 200px;
 }
 
+.icon.fa.fa-home,
+.icon.fa.fa-gift,
+.icon.fa.fa-user {
+  font-style: normal;
+}
+
 /* END FEATURES */
 
 /* CARDS */
@@ -119,6 +125,8 @@ body {
   align-items: center;
   color: white;
   height: 30vh;
+  font-size: 3rem;
+  font-weight: bold;
 }
 /* END CARDS */
 
@@ -132,7 +140,7 @@ body {
 }
 
 .h1-review {
-  margin-top: 10vh;
+  margin-top: 10vh !important;
   font-size: 44px;
 }
 
@@ -468,16 +476,19 @@ body {
 
 .header {
   color: #222;
-  font-size: 44px;
   text-align: center;
   text-shadow: 1px 7px 25px;
 }
 
 .header2 {
   color: #222;
-  font-size: 44px;
+  font-size: 40px;
   text-align: center;
   text-shadow: 1px 7px 25px;
+  word-wrap: break-word; /* تكسر الكلمات عشان ما تتراكم */
+  white-space: normal; /* يسمح بلف السطر */
+  line-height: 1.2; /* تحكم في ارتفاع السطر */
+  margin: auto;
 }
 
 .container2 {
@@ -1336,7 +1347,7 @@ button:focus + .design-container {
 .site-footer {
   background-color: #222;
   color: white;
-  padding: 40px 20px;
+  padding: 27px 20px;
   text-align: center;
 }
 
@@ -1481,5 +1492,11 @@ button:focus + .design-container {
   }
   .div-features {
     width: 150px;
+  }
+  .header2 {
+    font-size: 25px;
+  }
+  .wrapper {
+    margin-top: 30px;
   }
 }

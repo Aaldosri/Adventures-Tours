@@ -1,16 +1,27 @@
 import "./App.css";
-import img from "../src/img/pic.webp";
-import img2 from "../src/img/pic3.png";
 import img3 from "../src/img/2.png";
-import img4 from "../src/img/pic4.jpg";
-import img5 from "../src/img/pic5.jpg";
 import img6 from "../src/img/pic6.jpg";
+
+import { useRef } from "react";
 
 import "./App.scss";
 
-import { useState } from "react";
-
 function App() {
+  const exploreRef = useRef(null);
+  const featuresRef = useRef(null);
+  const popularRef = useRef(null);
+  const reviewRef = useRef(null);
+  const bookRef = useRef(null);
+
+  const handleScroll = (ref) => {
+    const checkbox = document.getElementById("navi-toggle");
+    if (checkbox) checkbox.checked = false;
+
+    setTimeout(() => {
+      ref.current?.scrollIntoView({ behavior: "smooth" });
+    }, 500);
+  };
+
   return (
     <>
       <div className="div-body">
@@ -32,27 +43,62 @@ function App() {
               <nav class="navigation__nav">
                 <ul class="navigation__list">
                   <li class="navigation__item">
-                    <a href="#" class="navigation__link">
+                    <a
+                      href="#"
+                      class="navigation__link"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        handleScroll(exploreRef);
+                      }}
+                    >
                       <span>01</span>Exploer
                     </a>
                   </li>
                   <li class="navigation__item">
-                    <a href="#" class="navigation__link">
+                    <a
+                      href="#"
+                      class="navigation__link"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        handleScroll(featuresRef);
+                      }}
+                    >
                       <span>02</span>Features
                     </a>
                   </li>
                   <li class="navigation__item">
-                    <a href="#" class="navigation__link">
+                    <a
+                      href="#"
+                      class="navigation__link"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        handleScroll(popularRef);
+                      }}
+                    >
                       <span>03</span>Popular tours
                     </a>
                   </li>
                   <li class="navigation__item">
-                    <a href="#" class="navigation__link">
+                    <a
+                      href="#"
+                      class="navigation__link"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        handleScroll(reviewRef);
+                      }}
+                    >
                       <span>04</span>Review
                     </a>
                   </li>
                   <li class="navigation__item">
-                    <a href="#" class="navigation__link">
+                    <a
+                      href="#"
+                      class="navigation__link"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        handleScroll(bookRef);
+                      }}
+                    >
                       <span>05</span>Book now
                     </a>
                   </li>
@@ -63,7 +109,7 @@ function App() {
               style={{
                 background: "gray",
                 height: "90vh",
-                clipPath: "polygon(0 0, 100% 0, 100% 85%, 0 100%)", // رفع القص قليلاً
+                clipPath: "polygon(0 0, 100% 0, 100% 85%, 0 100%)",
               }}
             >
               <div
@@ -73,9 +119,8 @@ function App() {
                   backgroundSize: "cover",
 
                   backgroundPosition: "center",
-                  height: "100vh", // يمكنك تعديلها حسب الحاجة
+                  height: "100vh",
                 }}
-                // className="flex justify-between items-center p-4"
               >
                 <img
                   style={{ height: "150px", width: "150px" }}
@@ -98,13 +143,9 @@ function App() {
           <section>
             <main>
               <div>
-                {/* <h1 className="h1-inroduce">
-                  Explore the Nature and Embrace the Adventure
-                </h1> */}
-
-                <div className="div-inroduce">
+                <div className="div-inroduce" ref={exploreRef}>
                   <div class="container2">
-                    <h1 className="header">
+                    <h1 className="header2 text-[#222] text-center text-bold text-[30px] sm:text-[38px] max-w-[90%] sm:max-w-full sm:mx-0 mx-auto leading-snug break-words">
                       Explore the Nature and Embrace the Adventure
                     </h1>
                     <p
@@ -115,6 +156,7 @@ function App() {
                         justifyContent: "center",
                         alignContent: "center",
                         alignItems: "center",
+                        padding: "10px",
                       }}
                     >
                       Step into nature’s wonders and embrace the thrill of
@@ -182,21 +224,23 @@ function App() {
                     </div>
                   </div>
                 </div>
+                <h1
+                  className="header2"
+                  style={{
+                    textAlign: "center",
+                    marginTop: "30px",
+                  }}
+                >
+                  {" "}
+                  Features
+                </h1>
               </div>
 
               {/* ===== FEATURES ===== */}
-              <section className="section-features">
-                {/* <div className="h1">
-                  <h1
-                    style={{
-                      background: "orange",
-                      marginTop: "150px",
-                    }}
-                  >
-                    {" "}
-                    Features
-                  </h1>
-                </div> */}
+              <section
+                className="section-features scroll-mt-[100px]"
+                ref={featuresRef}
+              >
                 <div class="timeline">
                   <div class="container left">
                     <i class="icon fa fa-home">1</i>
@@ -235,7 +279,7 @@ function App() {
               {/* ===== END FEATURES ===== */}
 
               {/* ===== CARDS ===== */}
-              <div className="h1">
+              <div className="h1 scroll-mt-[100px]" ref={popularRef}>
                 <h1 className="header2">MOST POPULAR TOURS</h1>
               </div>
               <div className="div-cards">
@@ -385,9 +429,11 @@ function App() {
 
               {/* ===== REVIEW ===== */}
 
-              <div className="div-review">
+              <div className="div-review" ref={reviewRef}>
                 <div className="h1">
-                  <h1 className="h1-review">We make people genuinely happy</h1>
+                  <h1 className="h1-review header2">
+                    We make people genuinely happy
+                  </h1>
                 </div>
                 <div class="outerdiv">
                   <div class="innerdiv">
@@ -532,10 +578,12 @@ function App() {
 
               {/* ===== BOOK ===== */}
 
-              <section className="section-book">
+              <section className="section-book" ref={bookRef}>
                 <div className="book-form">
                   <div class="form-container">
-                    <h1 style={{ fontSize: "2.5rem" }}>Start Booking Now</h1>
+                    <h1 style={{ fontSize: "2.5rem", marginBottom: "7vh" }}>
+                      Start Booking Now
+                    </h1>
 
                     <input type="email" placeholder="Full Name" />
                     <input type="password" placeholder="Email address" />
@@ -550,7 +598,7 @@ function App() {
 
         {/* ===== FOOTER ===== */}
 
-        <section style={{ paddingBottom: "50px" }}>
+        <section>
           <footer className="site-footer">
             <div className="footer-container">
               <div className="footer-columns">
@@ -616,6 +664,12 @@ function App() {
                         >
                           <span className="span-color"> contact@.com</span>
                         </a>
+                      </li>
+                      <li className="footer-nav-item">
+                        <a
+                          href="mailto:contact.laboiserie@gmail.com"
+                          className="footer-nav-link"
+                        ></a>
                       </li>
                     </ul>
                   </nav>
