@@ -108,7 +108,7 @@ function App() {
             <header
               style={{
                 background: "gray",
-                height: "90vh",
+                height: "100vh",
                 clipPath: "polygon(0 0, 100% 0, 100% 85%, 0 100%)",
               }}
             >
@@ -120,7 +120,6 @@ function App() {
 
                   backgroundPosition: "center",
                   height: "100vh",
-                  marginTop: "20px",
                 }}
               >
                 <img
@@ -177,12 +176,11 @@ function App() {
                       <div class="wrapper">
                         <div class="box vintage">
                           <img
-                            src="https://cdn.pixabay.com/photo/2022/08/15/03/07/path-7387018_1280.jpg
-  "
+                            src="https://cdn.pixabay.com/photo/2022/08/15/03/07/path-7387018_1280.jpg"
                             alt="Jenny of Oldstones"
                           />
                           <div class="frame">
-                            <h2 className="h2-exploer">Jungle</h2>
+                            <h2 class="h2-exploer">Jungle</h2>
                           </div>
                         </div>
                       </div>
