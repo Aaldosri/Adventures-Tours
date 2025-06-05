@@ -117,9 +117,10 @@ function App() {
                   background: "green",
                   backgroundImage: `linear-gradient(rgba(11, 113, 84, 0.62), rgba(56, 81, 58, 0.5)), url(${img6})`,
                   backgroundSize: "cover",
-
                   backgroundPosition: "center",
                   height: "100vh",
+                  paddingTop: "env(safe-area-inset-top, 20px)", // هنا أضفت البادينج الأعلى مع قيمة احتياطية 20px
+                  boxSizing: "border-box", // مهم عشان البادينج ما يزيد الحجم الكلي
                 }}
               >
                 <img

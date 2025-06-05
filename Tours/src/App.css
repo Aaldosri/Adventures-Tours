@@ -1,19 +1,19 @@
 @import "tailwindcss";
 
 body {
-  font-family: NotoSans;
+  font-family: NotoSans, "DM-sans", Arial, Helvetica, sans-serif;
   margin: 0;
   width: 100%;
-  height: 100dvh;
-  font-family: "DM-sans", sans-serif;
+  height: 100vh;
   background-size: cover;
-  font-family: Arial, Helvetica, sans-serif;
   background: #ffffff;
+  padding-top: constant(safe-area-inset-top);
+  padding-top: env(safe-area-inset-top, 0px);
 }
 
 ::selection {
   background-color: rgb(72, 193, 72);
-  color: #000; /* تغيير لون النص عند التحديد */
+  color: #000;
 }
 
 @font-face {
@@ -26,7 +26,7 @@ body {
   from {
     transform: scale(0);
     border-radius: 50%;
-    transform-origin: var(--x) var(--y); /* نقطة البداية من مكان الزر */
+    transform-origin: var(--x) var(--y);
   }
   to {
     transform: scale(1);
@@ -44,11 +44,9 @@ body {
   height: 94vh;
   background: orange;
 
-  /* إمالة العنصر لإنشاء تأثير القص */
   transform: skewY(-4.76deg);
 }
 
-/* تصحيح إمالة المحتوى داخل الـ section */
 .section * {
   transform: skewY(4.76deg);
 }
@@ -88,12 +86,7 @@ body {
 .section-features {
   background: #10ac84;
   height: 120vh;
-  clip-path: polygon(
-    0 20%,
-    100% 0,
-    100% 80%,
-    0 100%
-  ); /* قص من الأعلى والأسفل */
+  clip-path: polygon(0 20%, 100% 0, 100% 80%, 0 100%);
 }
 
 .h1 {
@@ -143,8 +136,6 @@ body {
 .div-review {
   background-color: #10ac84;
   min-height: 130vh;
-  /* display: flex;
-  justify-content: space-around; */
 }
 
 .h1-review {
@@ -190,37 +181,32 @@ body {
   background-image: url("https://cdn.pixabay.com/photo/2019/07/27/07/24/forest-4366094_1280.jpg");
   background-size: cover;
   background-position: center;
-  overflow: hidden; /* يمنع خروج أي عنصر خارج المربع */
+  overflow: hidden;
   flex-direction: column;
   display: flex;
   justify-content: space-around;
   flex-direction: column;
   mix-blend-mode: multiply;
-  z-index: 0; /* يضمن بقاء الميلان في الخلف */
+  z-index: 0;
 }
 
-/* الجزء الأيسر بدون ميلان */
-
-/* الجزء الأيمن مع ميلان */
 .book-form::before {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
-  width: 50%; /* نسبة التغطية من اليسار */
+  width: 50%;
   height: 100%;
-  background: rgba(255, 255, 255, 0.613); /* لون أبيض شفاف */
-  transform: skewX(-10deg); /* جعل الشكل مائلاً */
+  background: rgba(255, 255, 255, 0.613);
+  transform: skewX(-10deg);
   transform-origin: top left;
   z-index: 1;
 }
 
 .form-container {
   position: relative;
-  /* background: rgba(255, 255, 255, 0.9); */
   padding: 25px;
   border-radius: 15px;
-  /* box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1); */
   text-align: center;
   width: 400px;
   z-index: 1;
@@ -479,9 +465,9 @@ body {
   font-size: 40px;
   text-align: center;
   text-shadow: 1px 7px 25px;
-  word-wrap: break-word; /* تكسر الكلمات عشان ما تتراكم */
-  white-space: normal; /* يسمح بلف السطر */
-  line-height: 1.2; /* تحكم في ارتفاع السطر */
+  word-wrap: break-word;
+  white-space: normal;
+  line-height: 1.2;
   margin: auto;
 }
 
@@ -495,7 +481,7 @@ body {
 
 .content2 {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 أعمدة متساوية */
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .wrapper {
@@ -852,13 +838,13 @@ a:hover {
 }
 
 .outerdiv {
-  position: relative; /* يضمن أن الفيديو يتمركز بداخله */
+  position: relative;
   width: 100%;
   min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: hidden; /* يمنع أي تجاوزات للفيديو */
+  overflow: hidden;
 }
 
 .background-video {
@@ -867,8 +853,8 @@ a:hover {
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover; /* يجعل الفيديو يغطي العنصر بالكامل */
-  z-index: -1; /* يرسل الفيديو للخلف */
+  object-fit: cover;
+  z-index: -1;
 }
 .innerdiv {
   transform: scale(0.9);
@@ -1033,7 +1019,6 @@ a:hover {
   perspective: 1000px;
 }
 
-/* .flip-card */
 .flip-card {
   width: inherit;
   height: inherit;
@@ -1043,13 +1028,11 @@ a:hover {
   transition: 0.6s 0.1s;
 }
 
-/* hover and focus-within states */
 .flip-card-container:hover .flip-card,
 .flip-card-container:focus-within .flip-card {
   transform: rotateY(180deg);
 }
 
-/* .card-... */
 .card-front,
 .card-back {
   width: 100%;
@@ -1069,24 +1052,20 @@ a:hover {
   align-items: center;
 }
 
-/* .card-front */
 .card-front {
   transform: rotateY(0deg);
   z-index: 2;
 }
 
-/* .card-back */
 .card-back {
   transform: rotateY(180deg);
   z-index: 1;
 }
 
-/* figure */
 figure {
   z-index: -1;
 }
 
-/* figure, .img-bg */
 figure,
 .img-bg {
   position: absolute;
@@ -1097,13 +1076,11 @@ figure,
   height: 100%;
 }
 
-/* img */
 img {
   height: 100%;
   border-radius: 24px;
 }
 
-/* figcaption */
 figcaption {
   display: block;
 
@@ -1125,7 +1102,6 @@ figcaption {
   background: hsla(var(--hue), 25%, 10%, 0.5);
 }
 
-/* .img-bg */
 .img-bg {
   background: hsla(var(--hue), 25%, 10%, 0.5);
 }
@@ -1138,7 +1114,6 @@ figcaption {
   clip-path: polygon(0 0, 100% 0, 100% 80%, 0 60%);
 }
 
-/* hover state */
 .flip-card-container:hover .card-front .img-bg::before {
   width: 6px;
   border-left-color: var(--primary);
@@ -1161,7 +1136,6 @@ ul {
   flex-direction: column;
 }
 
-/* li */
 li {
   width: 100%;
   margin-top: 12px;
@@ -1191,7 +1165,6 @@ li:not(:last-child)::after {
   opacity: 0.2;
 }
 
-/* button */
 button {
   font-family: inherit;
   font-weight: bold;
@@ -1219,7 +1192,6 @@ button:active {
   transform: translate(2px);
 }
 
-/* .design-container */
 .design-container {
   --tr: 90;
   --op: 0.5;
@@ -1235,7 +1207,6 @@ button:active {
   pointer-events: none;
 }
 
-/* .design */
 .design {
   display: block;
 
@@ -1318,7 +1289,6 @@ button:active {
   top: 56%;
 }
 
-/* states */
 button:hover + .design-container,
 button:active + .design-container,
 button:focus + .design-container {
@@ -1385,10 +1355,6 @@ button:focus + .design-container {
   transition: 0.3s;
 }
 
-/* .footer-nav-link:hover {
-  color: #10ac84;
-} */
-
 .footer-copyrights {
   border-top: 1px solid #555;
   padding-top: 20px;
@@ -1434,13 +1400,13 @@ button:focus + .design-container {
 
   .div-cards {
     flex-direction: column;
-    align-items: center; /* توسيط العناصر عند تصغير الشاشة */
-    height: auto; /* لتناسب المحتوى */
+    align-items: center;
+    height: auto;
   }
   .book-form::before {
-    width: 100%; /* يغطي كل العرض */
+    width: 100%;
     left: 50%;
-    transform: translateX(-50%); /* يجعله في المنتصف */
+    transform: translateX(-50%);
   }
   .book-form {
     display: flex;
@@ -1454,13 +1420,13 @@ button:focus + .design-container {
   }
   .div-cards {
     flex-direction: column;
-    align-items: center; /* توسيط العناصر عند تصغير الشاشة */
-    height: auto; /* لتناسب المحتوى */
+    align-items: center;
+    height: auto;
   }
   .book-form::before {
-    width: 100%; /* يغطي كل العرض */
+    width: 100%;
     left: 50%;
-    transform: translateX(-50%); /* يجعله في المنتصف */
+    transform: translateX(-50%);
   }
   .section-features {
     height: 165vh;
