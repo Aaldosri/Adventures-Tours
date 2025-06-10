@@ -121,13 +121,22 @@ body {
   }
 
   &__list {
-    position: absolute;
+    // position: absolute;
     // top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    // left: 50%;
+    // transform: translate(-50%, -50%);
+    // list-style: none;
+    // text-align: center;
+    // width: 100%;
+    position: absolute;
+    top: 50%; // ضروري للتوسيط العمودي
+    left: 50%; // ضروري للتوسيط الأفقي
+    transform: translate(-50%, -50%); // يحرك العنصر من المركز نفسه
     list-style: none;
     text-align: center;
     width: 100%;
+    padding: 0; // إذا فيه مسافات إضافية
+    margin: 0;
   }
 
   &__item {
