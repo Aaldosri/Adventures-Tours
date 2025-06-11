@@ -145,7 +145,7 @@ function App() {
               <div>
                 <div className="div-inroduce" ref={exploreRef}>
                   <div class="container2">
-                    <h1 className="header2 text-[#222] text-center text-bold text-[30px] sm:text-[38px] max-w-[90%] sm:max-w-full sm:mx-0 mx-auto leading-snug break-words">
+                    <h1 className="pt-[10vh] text-[#222] text-center font-bold text-[35px] sm:text-[38px] max-w-[90%] sm:max-w-full mx-auto leading-snug break-words">
                       Explore the Nature and Embrace the Adventure
                     </h1>
                     <p
@@ -265,16 +265,17 @@ function App() {
               </section> */}
               <div className="bg-[#222]">
                 <section
+                  ref={featuresRef}
                   id="features"
-                  className="relative h-[700px] flex flex-col items-center justify-center px-6 py-10 md:py-20 md:px-10 border-t border-b border-neutral-900 bg-neutral-900/30"
+                  className="relative custom-height flex flex-col items-center justify-center px-6 py-10 md:py-20 md:px-10 border-t border-b border-neutral-900 bg-neutral-900/30"
                 >
                   <div className="relative mx-auto max-w-5xl text-center">
-                    <h2 className="block margin-bottom w-full bg-gradient-to-b from-white to-gray-400 bg-clip-text font-bold text-transparent text-3xl sm:text-4xl">
+                    <h2 className="block header3  margin-bottom w-full bg-gradient-to-b from-white to-gray-400 bg-clip-text font-bold text-transparent text-3xl sm:text-4xl">
                       Features
                     </h2>
                   </div>
 
-                  <div className="relative mx-auto max-w-7xl z-10 grid grid-cols-3 gap-10 pt-14 md:grid-cols-1">
+                  <div className="relative mx-auto max-w-7xl z-10 grid custom-cols gap-10 pt-14">
                     <div className="rounded-md padding border border-neutral-800 bg-neutral-900/50 p-8 text-center shadow">
                       <div
                         className="button-text  mx-auto flex h-12 w-12 items-center justify-center rounded-md border"
@@ -420,7 +421,9 @@ function App() {
               {/* ===== END FEATURES ===== */}
               {/* ===== CARDS ===== */}
               <div className="h1 scroll-mt-[100px]" ref={popularRef}>
-                <h1 className="header2">MOST POPULAR TOURS</h1>
+                <h1 className="header2 font-bold" style={{ marginTop: "10vh" }}>
+                  Most Popular Tours
+                </h1>
               </div>
               <div className="div-cards">
                 <div className="flip-card-container" style={{ "--hue": 220 }}>
@@ -567,10 +570,13 @@ function App() {
               </div>
               {/* ===== END CARDS ===== */}
               {/* ===== REVIEW ===== */}
-              <div className="div-review" ref={reviewRef}>
+              <div
+                className="div-review relative bg-neutral-900/30"
+                ref={reviewRef}
+              >
                 <div className="h1">
-                  <h1 className="h1-review header2">
-                    We make people genuinely happy
+                  <h1 className="pt-[10vh] header3 text-[32px] sm:text-[36px] md:text-[44px] font-bold text-center leading-tight">
+                    We Make People Genuinely Happy
                   </h1>
                 </div>
                 <div class="outerdiv">
@@ -710,6 +716,22 @@ function App() {
                     </div>
                   </div>
                 </div>
+                <div
+                  className="absolute bottom-0 left-0 z-0 h-1/3 w-full border-b"
+                  style={{
+                    backgroundImage:
+                      "linear-gradient(to right top, rgba(79, 70, 229, 0.2) 0%, transparent 50%, transparent 100%)",
+                    borderColor: "rgba(92, 79, 240, 0.2)",
+                  }}
+                ></div>
+                <div
+                  className="absolute bottom-0 right-0 z-0 h-1/3 w-full"
+                  style={{
+                    backgroundImage:
+                      "linear-gradient(to left top, rgba(220, 38, 38, 0.2) 0%, transparent 50%, transparent 100%)",
+                    borderColor: "rgba(92, 79, 240, 0.2)",
+                  }}
+                ></div>
               </div>
               {/* ===== END REVIEW ===== */}
               {/* ===== BOOK ===== */}
