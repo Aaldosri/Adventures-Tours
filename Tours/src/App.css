@@ -1484,12 +1484,6 @@ button:focus + .design-container {
   }
 }
 
-/* @media screen and (width: 1024px) and (height: 1366px) {
-  .flip-card-container {
-    height: 600px !important;
-  }
-} */
-
 @media (max-width: 820px) {
   .section-features {
     height: 120vh;
