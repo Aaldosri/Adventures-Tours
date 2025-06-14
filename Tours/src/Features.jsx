@@ -1,9 +1,20 @@
 import React from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 export default function Features({ featuresRef }) {
+  useEffect(() => {
+    AOS.init({
+      duration: 800, // مدة الحركة
+      easing: "ease-in-out", // نوع الحركة
+      mirror: true, // يخلي العنصر يعيد الحركة عند الرجوع له
+    });
+  }, []);
+
   return (
     <section>
-      <div className="bg-[#222]">
+      <div className="bg-[#222] ">
         <section
           ref={featuresRef}
           id="features"
@@ -16,15 +27,19 @@ export default function Features({ featuresRef }) {
           </div>
 
           <div className="relative mx-auto max-w-7xl z-10 grid custom-cols gap-10 pt-14">
-            <div className="rounded-md padding border border-neutral-800 bg-neutral-900/50 p-8 text-center shadow">
+            <div
+              className="rounded-md padding border border-neutral-800 bg-neutral-900/50 p-8 text-center shadow transition-transform duration-700"
+              data-aos="fade-up"
+            >
               <div
-                className="button-text  mx-auto flex h-12 w-12 items-center justify-center rounded-md border"
+                className="button-text mx-auto flex h-12 w-12 items-center justify-center rounded-md border"
                 style={{
                   backgroundImage:
                     "linear-gradient(rgb(80, 70, 229) 0%, rgb(43, 49, 203) 100%)",
                   borderColor: "rgb(93, 79, 240)",
                 }}
               >
+                {/* أيقونة */}
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="icon icon-tabler icon-tabler-color-swatch"
@@ -49,11 +64,15 @@ export default function Features({ featuresRef }) {
               </h3>
               <p className="my-4 mb-0 font-normal leading-relaxed tracking-wide text-gray-400">
                 Enjoy adrenaline-pumping activities like hiking, kayaking, and
-                zip-lining in breathtaking locations.{" "}
+                zip-lining in breathtaking locations.
               </p>
             </div>
 
-            <div className="rounded-md padding border border-neutral-800 bg-neutral-900/50 p-8 text-center shadow">
+            <div
+              className="rounded-md padding border border-neutral-800 bg-neutral-900/50 p-8 text-center shadow transition-transform duration-300"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
               <div
                 className="button-text mx-auto flex h-12 w-12 items-center justify-center rounded-md border"
                 style={{
@@ -83,11 +102,15 @@ export default function Features({ featuresRef }) {
               </h3>
               <p className="my-4 mb-0 font-normal leading-relaxed tracking-wide text-gray-400">
                 Our professional guides ensure a safe and unforgettable journey,
-                packed with local insights and hidden gems.{" "}
+                packed with local insights and hidden gems.
               </p>
             </div>
 
-            <div className="rounded-md padding border border-neutral-800 bg-neutral-900/50 p-8 text-center shadow">
+            <div
+              className="rounded-md padding border border-neutral-800 bg-neutral-900/50 p-8 text-center shadow transition-transform duration-300"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
               <div
                 className="button-text mx-auto flex h-12 w-12 items-center justify-center rounded-md border"
                 style={{
@@ -122,7 +145,7 @@ export default function Features({ featuresRef }) {
               </h3>
               <p className="my-4 mb-0 font-normal leading-relaxed tracking-wide text-gray-400">
                 Hassle-free adventures with transportation, gear, and
-                accommodations included, so you can focus on the experience.{" "}
+                accommodations included, so you can focus on the experience.
               </p>
             </div>
           </div>
