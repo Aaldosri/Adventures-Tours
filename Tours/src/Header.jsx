@@ -118,8 +118,8 @@ export default function Header({
               <a href=""></a>
               <a href=""></a>
               <a href=""></a>
-              <span class="fill-text" data-text="Advantures Tours">
-                Advantures Tours
+              <span class="fill-text" data-text="Adventures Tours">
+                Adventures Tours
               </span>
             </div>
           </div>
