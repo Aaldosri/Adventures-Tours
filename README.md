@@ -12,9 +12,9 @@ Adventure Tour is a website for booking thrilling and guided outdoor adventure t
 
 ### ✨ Features
 
-- 🧗‍♂️ Book exciting adventure tours easily
-- 🧭 Expert guides for safe and fun experiences
-- 🎒 All-inclusive packages with transportation and gear
+-  Book exciting adventure tours easily
+-  Expert guides for safe and fun experiences
+-  All-inclusive packages with transportation and gear
 
 ---
 
