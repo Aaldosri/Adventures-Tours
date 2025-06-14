@@ -493,6 +493,9 @@ body {
   margin: auto; */
 }
 
+.shadow {
+  text-shadow: 1px 7px 25px;
+}
 .container2 {
   width: 100%;
   max-width: 1200px;
@@ -1428,10 +1431,11 @@ button:focus + .design-container {
   margin-bottom: 1.5rem;
   font-size: 2rem;
   font-weight: bold;
-  text-align: center; /* أو left حسب التصميم */
+  text-align: center;
 }
 
 /* ===== RESPONSIVE ======*/
+
 @media (max-width: 2600px) {
   .section-features {
     /* padding-top: 20vh; */
@@ -1524,6 +1528,7 @@ button:focus + .design-container {
   }
   .header2 {
     margin-top: 10vh;
+    font-size: 35px;
   }
   .custom-cols {
     grid-template-columns: 1fr;
@@ -1531,7 +1536,7 @@ button:focus + .design-container {
     padding-left: 15px;
   }
   .custom-height {
-    height: 1250px; /* الطول للشاشات المتوسطة والكبيرة */
+    height: 1250px;
   }
 }
 
